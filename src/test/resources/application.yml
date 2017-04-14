@@ -1,0 +1,5 @@
+service:
+  todoapp:
+     host: localhost
+     port: 1845
+     contextpath: /todoapp

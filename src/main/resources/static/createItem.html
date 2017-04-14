@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="toDoListApp">
+<title>ToDO - Create ToDo item</title>
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <script src="/todoapp/angular/angular.min.js"></script>
+    <script src="/todoapp/angular/angular-touch.min.js"></script>
+    <script src="/todoapp/angular/angular-animate.min.js"></script>
+    <script src="/todoapp/angular/ui-grid.min.js"></script>
+    <script src="/todoapp/angular/csv.js"></script>
+    <script src="/todoapp/angular/pdfmake.js"></script>
+    <script src="/todoapp/angular/vfsfonts.js"></script>
+    <script src="/todoapp/angular/app.js"></script>
+    <script src="/todoapp/angular/controllers/ToDoItemController.js"></script>
+    <script src="/todoapp/angular/services/ToDoItemService.js"></script>
+
+
+</head>
+<body>
+<header id="wbHeader"></header>
+<div>
+
+    <!--  Application content start  -->
+    <div ng-controller="ToDoItemController">
+
+        <!-- Main Content -->
+        <section id="appLayout_mainContent">
+            <header>
+                <h1 id="mainTitle"></h1>
+            </header>
+
+            <!-- Main application content to be placed inside of this div  -->
+            <div>
+                <div id = "formPage">
+                    <div id="main" >
+                        <div id="formWrapper">
+                            <div id ="summaryText">
+                                <div id="toDoTitleText">{{createUpdateButtonLabel}} ToDo item </div>
+                            </div>
+                            <div class="formContainer" >
+                                <form name="toDoForm">
+                                    <fieldset>
+                                        <ul>
+                                            Name : <input type="text" ng-model="toDoItemData.name" autofocus required/>
+                                            <label ng-show="nameMissing" ng-style="redcolor">Name is required</label>
+                                            <br><br>
+                                            Priority : <select ng-model="toDoItemData.priority">
+                                                            <option ng-repeat="priority in priorities" value="{{priority.key}}">{{priority.value}}</option>
+                                                        </select>
+                                            <br><br>
+                                            Status : <select ng-model="toDoItemData.status" ng-change="printName()">
+                                                         <option ng-repeat="status in statuses" value="{{status.key}}">{{status.value}}</option>
+                                                     </select>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Main application content to be placed inside of this div  -->
+
+            <!-- End of main application content  -->
+
+            <footer>
+                <input ng-click="createUpdateToDoItem()" type="button" value={{createUpdateButtonLabel}} class="embeddedControl cursorHand"/>
+            </footer>
+        </section>
+
+    </div>
+    <!--  Application content end  -->
+
+</div>
+
+</body>
+</html>
