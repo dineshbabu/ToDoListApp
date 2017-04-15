@@ -4,21 +4,21 @@ This app lets you create ToDo list, prioritise, sort, filter the ToDo items
 
 ## Technologies used
 
-Java 8
-Spring boot
-Spring ReST
-Gradle 3.2.1
-AngularJs 1.5.8
-Angular UI Grid
-TDD/BDD (Cucumber)
-Junit/Mockito
-Swagger
+Java 8  
+Spring boot  
+Spring ReST  
+Gradle 3.2.1  
+AngularJs 1.5.8  
+Angular UI Grid  
+TDD/BDD (Cucumber)  
+Junit/Mockito  
+Swagger  
 
 ## Development environment
 
-Windows 7
-IntelliJ IDE
-Chrome browser
+Windows 7  
+IntelliJ IDE  
+Chrome browser  
 
 ## Steps to build and run the application
 
