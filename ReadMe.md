@@ -22,7 +22,7 @@ Chrome browser
 
 ## Steps to build and run the application
 
-Prerequisite : Java 8 and gradle 3.2.1 installed
+Prerequisite : Java 8 and gradle 3.2.1 installed  
 Note: Since no database is used once you restart the application you will lose all data.
 
 1) Build the application with the command: gradle clean build
