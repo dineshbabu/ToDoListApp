@@ -34,7 +34,6 @@ public class Steps {
         return makeHttpRequest(uri, requestEntity, HttpMethod.PUT, reference);
     }
 
-
     public <T, U> U makeHttpRequest(String uri, T requestEntity, HttpMethod method, ParameterizedTypeReference<U> typeReference) throws MalformedURLException {
 
         URL url = new URL(String.format("http://localhost:%1$s/%2$s", port, uri));

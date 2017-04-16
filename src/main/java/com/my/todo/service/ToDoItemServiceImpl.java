@@ -24,11 +24,6 @@ public class ToDoItemServiceImpl implements ToDoItemService {
     }
 
     @Override
-    public int deleteToDoItem(ToDoItem toDoItem) {
-        return 0;
-    }
-
-    @Override
     public List<ToDoItem> getAllToDoItems() {
         return toDoItemRepositoryImpl.getAllToDoItems();
     }
@@ -44,8 +39,8 @@ public class ToDoItemServiceImpl implements ToDoItemService {
     }
 
     @Override
-    public ToDoItem getToDOItem(int id) {
-        return null;
+    public ToDoItem getToDOItem(long id) {
+        return toDoItemRepositoryImpl.getToDOItem(id);
     }
 
 }

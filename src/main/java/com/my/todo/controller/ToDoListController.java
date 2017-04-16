@@ -17,4 +17,7 @@ public interface ToDoListController {
     public String filterToDoItemsByStatus(int statusId) throws JsonProcessingException;
 
     public String filterToDoItemsByPriority(int priorityId) throws JsonProcessingException;
+
+    public String getToDoItem(long id) throws JsonProcessingException;
+
 }

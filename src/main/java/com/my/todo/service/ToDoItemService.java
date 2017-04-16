@@ -11,14 +11,12 @@ public interface ToDoItemService {
 
     public long updateToDoItem(ToDoItem toDoItem);
 
-    public int deleteToDoItem(ToDoItem toDoItem);
-
     public List<ToDoItem> getAllToDoItems();
 
     public List<ToDoItem> filterToDoItemsByStatus(int status);
 
     public List<ToDoItem> filterToDoItemsByPriority(int priority);
 
-    public ToDoItem getToDOItem(int id);
+    public ToDoItem getToDOItem(long id);
 
 }

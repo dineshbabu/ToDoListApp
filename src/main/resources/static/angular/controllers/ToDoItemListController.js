@@ -10,8 +10,8 @@ toDoListApp.controller('ToDoItemListController',
     $scope.editToDoItem = function(toDoItem){
         $scope.goToCreateItem($scope.getUrlEncodedBase64StringFromJSonObject(toDoItem));
     }
-
-    var cellEditTemplate = '<input ng-click="grid.appScope.editToDoItem(row.entity)" type="button" value="Update" class="embeddedControl cursorHand"/>';
+    $scope.buttonWidth = "100px";
+    var cellEditTemplate = '<input ng-click="grid.appScope.editToDoItem(row.entity)" type="button" value="Update" style="width:100px" class="embeddedControl cursorHand"/>';
 
     $scope.gridOptions.columnDefs = [
                                     { field: 'name', displayName: 'Name'},

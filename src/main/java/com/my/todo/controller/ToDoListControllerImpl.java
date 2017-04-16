@@ -61,6 +61,13 @@ public class ToDoListControllerImpl implements ToDoListController{
         return objectMapper.writeValueAsString(toDoItems);
     }
 
+    @Override
+    @RequestMapping(path = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String getToDoItem(@PathVariable("id") long id) throws JsonProcessingException {
+        ToDoItem toDoItem = toDoListServiceImpl.getToDOItem(id);
+        return objectMapper.writeValueAsString(toDoItem);
+    }
+
     private boolean isValidToDoItem(ToDoItem toDoItem, Long id) throws InvalidInputException {
         if(toDoItem.getName() == null){
             return false;

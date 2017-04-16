@@ -10,13 +10,12 @@ public interface ToDoItemRepository {
 
     public long updateToDoItem(ToDoItem toDoItem);
 
-    public int deleteToDoItem(ToDoItem toDoItem);
-
     public List<ToDoItem> getAllToDoItems();
 
-    public ToDoItem getToDOItem(int id);
+    public ToDoItem getToDOItem(long id);
 
     List<ToDoItem> filterToDoItemsByStatus(int status);
 
     List<ToDoItem> filterToDoItemsByPriority(int priority);
+
 }

@@ -38,18 +38,23 @@ public class ToDoItemRepositoryImpl implements ToDoItemRepository {
     }
 
     @Override
-    public int deleteToDoItem(ToDoItem toDoItem) {
-        return 0;
-    }
-
-    @Override
     public List<ToDoItem> getAllToDoItems() {
         return toDoItemList;
     }
 
     @Override
-    public ToDoItem getToDOItem(int id) {
-        return null;
+    public ToDoItem getToDOItem(long id) {
+        return toDoItemList.stream()
+                .filter(toDoItem -> toDoItem.getId() == id)
+                .collect(Collectors.collectingAndThen(Collectors.toList(), l -> {
+                                                                        if (l.size() == 1) {
+                                                                            return l.get(0);
+                                                                        }else{
+                                                                            return null;
+                                                                        }
+                                                                    }
+                                                        )
+                        );
     }
 
     @Override
