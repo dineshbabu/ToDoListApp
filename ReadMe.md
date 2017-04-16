@@ -37,8 +37,8 @@ Prerequisite : Java 8 and gradle 3.2.1 installed
 2) Use intelliJ Java IDE ( or any other ) and add the project to the IDE to view source code
 3) Open a command line window and switch to folder where build.gradle file is present.
 4) To build and run tests, use the command: gradle clean build
-5) To run only integration test from the IDE, run the CukeTestRunner.java class
-6) To run only unit test from the IDE, run the ToDoListControllerImplTest.java class
+5) To run only integration test from the IDE, run the CukeTestRunner.java
+6) To run only unit test from the IDE, run the ToDoListControllerImplTest.java
 
 ## Steps to run the application
 1) To start the application, run the java main class : ToDoApplication.java . This should start the application on port 8888
