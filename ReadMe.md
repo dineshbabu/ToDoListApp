@@ -29,7 +29,8 @@ Note: Since no database is used once you restart the application you will lose a
 2) Run the java main class : ToDoApplication.java
 3) Fire the URL http://localhost:8888/todoapp/createItem.html which will tale you to Create ToDo Item screen.
 4) On creation of an item , you will be taken to list of ToDo items (http://localhost:8888/todoapp/ListItems.html)
-5) On the ToDo Items list screen you have facility to create/update an item, filter the list by status and priority
-6) Max 10 items per page. After 10 items pagination kicks in  
+5) On the ToDo Items list screen you have facility to create/update an item, filter the list by status and priority. 
+6) On the ToDo Items list screen you have facility to sort items by name, status and priority. 
+7) Max 10 items per page. After 10 items pagination kicks in  
 
 You can see list of ReST end point with the Swagger URL, http://localhost:8888/todoapp/swagger-ui.html
