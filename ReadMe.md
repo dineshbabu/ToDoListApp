@@ -25,7 +25,7 @@ Chrome browser
 Prerequisite : Java 8 and gradle 3.2.1 installed  
 Note: Since no database is used once you restart the application you will lose all data.
 
-1) Get the source code from git https://github.com/dineshbabu/ToDoApp
+1) Get the source code from git https://github.com/dineshbabu/ToDoListApp
 2) Use intelliJ Java IDE and add the project to the IDE to view source code
 3) Open a command line window and switch to folder where build.gradle file is present.
 4) Build and run tests the application with the command: gradle clean build
