@@ -1,6 +1,6 @@
 # To do app
 
-This app lets you create ToDo list, prioritise, sort, filter the ToDo items
+This app lets you create ToDo list, prioritise, sort and filter the ToDo items
 
 ## Technologies used
 
