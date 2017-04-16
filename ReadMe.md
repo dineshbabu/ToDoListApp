@@ -23,7 +23,6 @@ Chrome browser
 ## Steps to build the application
 
 Prerequisite : Java 8 and gradle 3.2.1 installed  
-Note: Since no database is used once you restart the application you will lose all data.
 
 1) Get the source code from git https://github.com/dineshbabu/ToDoListApp
 2) Use intelliJ Java IDE and add the project to the IDE to view source code
@@ -40,3 +39,5 @@ Note: Since no database is used once you restart the application you will lose a
 5) On the ToDo Items list screen you have facility to sort items by name, status and priority. 
 6) Max 10 items per page. After 10 items pagination kicks in  
 7) To view all the ReST end points, use the Swagger URL, http://localhost:8888/todoapp/swagger-ui.html
+
+Note: Since no database is used, once you restart the application you will lose all data.
