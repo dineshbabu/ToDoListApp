@@ -1,5 +1,14 @@
 # ToDo app
 
+              _______    _____                            
+             |__   __|  |  __ \                           
+                | | ___ | |  | | ___     __ _ _ __  _ __  
+                | |/ _ \| |  | |/ _ \   / _` | '_ \| '_ \ 
+                | | (_) | |__| | (_) | | (_| | |_) | |_) |
+                |_|\___/|_____/ \___/   \__,_| .__/| .__/ 
+                                             | |   | |    
+                                             |_|   |_|    
+
 This app lets you create ToDo list, prioritise, sort and filter the ToDo items
 
 ## Technologies used
