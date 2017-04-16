@@ -15,7 +15,6 @@
     <script src="/todoapp/angular/pdfmake.js"></script>
     <script src="/todoapp/angular/vfsfonts.js"></script>
     <script src="/todoapp/angular/app.js"></script>
-    <!--<script src="/todoapp/angular/controllers/ToDoItemController.js"></script>-->
     <script src="/todoapp/angular/controllers/ToDoItemListController.js"></script>
     <script src="/todoapp/angular/services/ToDoItemService.js"></script>
 
@@ -28,17 +27,6 @@
 
     <!--  Application content start  -->
     <div>
-
-        <!-- Sidebar -->
-        <div id="appLayout_sideBar" class="hideSideBar">
-            <div id="navigationContainer"></div>
-            <div id="reportsContainer" style="display: none;">
-                <ul class="dsfrsButtonBar">
-                    <li><a id="viewSafeAndWellReport" href="" class="" target="_blank"></a></li>
-                </ul>
-            </div>
-        </div>
-
         <!-- Main Content -->
         <section id="appLayout_mainContent">
             <header>
@@ -53,7 +41,6 @@
                             <input ng-click="goToCreateItem()" type="button" value="Create new item" class="embeddedControl cursorHand"/>
                             <br><br>
                         </div>
-                        <!--<input ng-click="goToCreateItem()" type="button" value="Create new item" class="embeddedControl cursorHand"/>-->
                         <label>Filter by status: </label>
                         <select ng-model="selectedStatus" ng-change="filterByStatus()" style="max-width:95px;">
                             <option ng-repeat="status in statuses" value="{{status.key}}">{{status.value}}</option>
@@ -63,26 +50,7 @@
                         <select ng-model="selectedPriority" ng-change="filterByPriority()" style="max-width:95px;">
                             <option ng-repeat="priority in priorities" value="{{priority.key}}">{{priority.value}}</option>
                         </select>
-                        <!--<div id="filterBar" ng-show="renderManagerView">-->
-                            <!--<label>Select an advisor to assign: </label>-->
-                            <!--<select ng-model="selectedAdvisor" ng-change="setAdvisorToAllAddresses()" style="max-width:95px;">-->
-                                <!--<option value="">Unassign</option>-->
-                                <!--<option ng-repeat="advisor in advisors" value="{{advisor.userId}}">{{advisor.fullName}}</option>-->
-                            <!--</select>-->
 
-                            <!--<input id="saveButton" type="button" value="Save" ng-click="assignAdvisor()"/>-->
-                            <!--<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-                                <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-                            <!--</span>-->
-                            <!--<label>Filter by: </label>-->
-                            <!--<select ng-model="selectedFilter" ng-change="filterExeterList()" >-->
-                                <!--<option ng-repeat="filter in filters" value="{{filter.key}}">{{filter.value}}</option>-->
-                            <!--</select>-->
-                            <!--<select  ng-change="getAssignedVisitsToAnAdvisor()" ng-hide="hideAssigedToDropbox" ng-model="selectedAssignedTo" style="max-width:125px;">-->
-                                <!--<option value="noAdvisorSelectedToFilter">Select an advisor</option>-->
-                                <!--<option ng-repeat="advisor in advisors" value="{{advisor.userId}}">{{advisor.fullName}}</option>-->
-                            <!--</select>-->
-                        <!--</div>-->
                         <div id="exeterDataList1">
                             <div id="grid1"  ui-grid-pagination ui-grid="gridOptions" class="grid"></div>
                         </div>
