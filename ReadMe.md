@@ -1,4 +1,4 @@
-# To do app
+# ToDo app
 
 This app lets you create ToDo list, prioritise, sort and filter the ToDo items
 
