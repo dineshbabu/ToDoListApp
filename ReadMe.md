@@ -25,7 +25,7 @@ Chrome browser
 Prerequisite : Java 8 and gradle 3.2.1 installed  
 
 1) Get the source code from git https://github.com/dineshbabu/ToDoListApp
-2) Use intelliJ Java IDE and add the project to the IDE to view source code
+2) Use intelliJ Java IDE ( or any other ) and add the project to the IDE to view source code
 3) Open a command line window and switch to folder where build.gradle file is present.
 4) To build and run tests, use the command: gradle clean build
 5) To run only integration test from the IDE, run the CukeTestRunner.java class
